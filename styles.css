@@ -3,7 +3,7 @@ body {
   padding: 20px;
 }
 
-#grid-container {
+.grid-container {
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: repeat(3, 100px);
@@ -14,14 +14,10 @@ body {
 .grid-item {
   border: 1px solid black;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-size: 20px;
   background-color: transparent;
 }
 
-input, button {
-  margin: 5px;
-  padding: 5px;
-}
 
