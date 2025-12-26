@@ -1,14 +1,14 @@
 //your JS code here. If required.
-const changeBtn = document.getElementById("change_button");
-const resetBtn = document.getElementById("Reset");
+const changeButton = document.getElementById("change_button");
+const resetButton = document.getElementById("Reset");
 
-changeBtn.addEventListener("click", () => {
+changeButton.addEventListener("click", () => {
   const blockId = document.getElementById("block_id").value;
   const color = document.getElementById("colour_id").value;
 
-  // Reset all grid colors first
-  const allBlocks = document.querySelectorAll(".grid-item");
-  allBlocks.forEach(block => {
+  // Reset all blocks
+  const blocks = document.querySelectorAll(".grid-item");
+  blocks.forEach(block => {
     block.style.backgroundColor = "transparent";
   });
 
@@ -19,9 +19,10 @@ changeBtn.addEventListener("click", () => {
   }
 });
 
-resetBtn.addEventListener("click", () => {
-  const allBlocks = document.querySelectorAll(".grid-item");
-  allBlocks.forEach(block => {
+resetButton.addEventListener("click", () => {
+  const blocks = document.querySelectorAll(".grid-item");
+  blocks.forEach(block => {
     block.style.backgroundColor = "transparent";
   });
 });
+
